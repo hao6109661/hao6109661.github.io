@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#fafaf7" name="theme-color"/>
+<meta content="Hao Ye is a PhD researcher in Applied Mathematics at the University of Manchester, working on fluid mechanics and fluid–structure interaction." name="description"/>
+<title>Hao Ye — Applied Mathematics</title>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<style>
+    :root{--paper:#fafaf7;--ink:#18333b;--sub:#50646b;--muted:#74858a;--green:#24696d;--border:#dfe7e3;--soft:#eef4f1;--white:#fff;--serif:Georgia,"Noto Serif CJK SC","Songti SC",serif;--sans:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}button,a{ -webkit-tap-highlight-color:transparent }a:focus-visible,button:focus-visible{outline:3px solid #60aaa6;outline-offset:3px}::selection{background:#c7e3dc;color:#16333a}.container{width:min(1080px,calc(100% - 64px));margin-inline:auto}.skip-link{position:absolute;top:-90px;left:20px;z-index:100;background:white;padding:12px 18px}.skip-link:focus{top:15px}
+    header{height:88px;border-bottom:1px solid var(--border);background:rgba(250,250,247,.95);position:sticky;top:0;z-index:20;backdrop-filter:blur(14px)}.header-inner{height:100%;display:flex;align-items:center;gap:32px}.logo{font-size:24px;font-weight:750;letter-spacing:-1px;white-space:nowrap}.logo::after{content:".";color:#3f9994}.nav{display:flex;gap:32px;margin-left:auto;align-items:center}.nav a{font-size:16px;color:var(--sub);font-weight:550;transition:color .2s}.nav a:hover{color:var(--green)}.lang-switch{display:flex;gap:4px;align-items:center;border:1px solid #d5e0db;border-radius:999px;padding:5px;background:white;white-space:nowrap}.lang-switch button{background:transparent;border:0;cursor:pointer;color:#526a70;padding:5px 13px;border-radius:999px;font-size:14px;font-weight:700}.lang-switch button[aria-pressed="true"]{background:var(--ink);color:white}
+    .hero{display:grid;grid-template-columns:1.13fr .87fr;gap:76px;align-items:center;padding:86px 0 103px}.eyebrow{font-size:15px;color:var(--green);font-weight:750;letter-spacing:.1em;text-transform:uppercase;line-height:1.5}.hero h1{font-size:clamp(70px,8vw,104px);font-weight:720;letter-spacing:-.07em;line-height:1.07;margin:19px 0 12px}.chinese-name{font-family:var(--serif);font-size:27px;color:#60757b;letter-spacing:.04em;margin-bottom:21px}.hero h2{font:400 clamp(26px,3vw,34px)/1.45 var(--serif);margin:0 0 22px;letter-spacing:-.025em}.intro{max-width:570px;color:var(--sub);font-size:19px;line-height:1.85;margin:0 0 27px}.hero-links{display:flex;flex-wrap:wrap;gap:10px 15px;align-items:center}.link-button{display:inline-flex;gap:9px;align-items:center;justify-content:center;font-size:16px;font-weight:650;border:1px solid #d7e1db;border-radius:999px;padding:9px 16px;background:white;transition:background .2s,transform .2s}.link-button:hover{transform:translateY(-2px);background:#eef5f2}.link-button.primary{color:white;background:var(--ink);border-color:var(--ink)}.link-button.primary:hover{background:#2b5860}.photo-frame{position:relative;border-radius:15px;overflow:hidden;background:#e7e9e7;box-shadow:0 18px 42px rgba(26,57,60,.08);aspect-ratio:4/4.65}.photo-frame img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 28%}.photo-frame::after{content:"";position:absolute;inset:0;border:1px solid rgba(27,62,61,.07);border-radius:inherit;pointer-events:none}
+    section{scroll-margin-top:104px}.section{border-top:1px solid var(--border);padding:83px 0 91px}.section-title{font:400 clamp(37px,4.3vw,55px)/1.2 var(--serif);letter-spacing:-.055em;margin:0 0 22px}.section-intro{font-size:19px;color:var(--sub);line-height:1.8;max-width:830px;margin:0 0 35px}.overline{font-size:13px;letter-spacing:.15em;font-weight:800;text-transform:uppercase;color:var(--green);margin-bottom:15px}
+    .research-item .research-link{color:#24696d;font-weight:750;text-decoration:underline;text-decoration-color:#abcac0;text-underline-offset:3px}
+    .research-rows{display:grid;grid-template-columns:1fr 1fr;gap:26px}.research-item{padding:28px 30px 27px;background:var(--white);border:1px solid var(--border);border-radius:12px}.research-item h3{font-size:22px;line-height:1.35;letter-spacing:-.025em;margin:0 0 11px}.research-item p{font-size:17px;color:var(--sub);margin:0;line-height:1.75}
+    .paper-header{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}.paper-meta{font-size:15px;text-transform:uppercase;letter-spacing:.085em;font-weight:750;color:var(--green);margin-bottom:17px}.paper-title{font:400 clamp(27px,3vw,38px)/1.34 var(--serif);letter-spacing:-.035em;margin:0 0 12px;max-width:900px}.authors{color:var(--sub);font-size:17px;margin:0 0 23px}.paper-summary{font-size:19px;color:var(--sub);line-height:1.85;margin:0 0 28px;max-width:850px}.findings{background:#ecf3ef;border-left:4px solid var(--green);padding:27px 32px 25px;margin:24px 0 34px;border-radius:0 10px 10px 0}.findings strong{display:block;color:var(--ink);font-size:19px;margin-bottom:10px}.findings p{font-size:17px;line-height:1.85;color:#3f5c60;margin:0}.figures{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:25px 0 16px}.figure{margin:0}.figure img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid #d7e5df;aspect-ratio:2/1;object-fit:cover}.figure figcaption{padding:13px 3px 0;font-size:16px;line-height:1.7;color:var(--sub)}.figure figcaption strong{color:var(--ink);font-weight:720}.figure-note{font-size:14px;color:#6d7f83;line-height:1.65;margin:19px 0 0}.paper-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}
+    .background-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.block-heading{font-size:23px;font-weight:750;margin:0 0 16px}.edu-item{border-top:1px solid var(--border);padding:17px 0 19px}.edu-item strong{font-size:18px;display:block;line-height:1.45}.edu-item span{font-size:16px;color:var(--sub);display:block;margin-top:4px}.teaching-box{border-top:1px solid var(--border);padding-top:19px}.teaching-box p{font-size:17px;color:var(--sub);line-height:1.8;margin:0 0 12px}.teaching-box .university{font-size:18px;font-weight:720;color:var(--ink)}.teaching-courses{color:var(--sub);font-size:16px;line-height:1.9}.scholarship{font-size:15px;color:#496e6d;margin-top:17px;border-radius:8px;padding:15px 17px;background:#eaf2ee}
+    .contact{padding:65px 0 81px;border-top:1px solid var(--border)}.contact-box{display:flex;gap:20px;align-items:center;justify-content:space-between;background:#1d3b43;color:#fff;border-radius:14px;padding:39px 44px}.contact-box h2{font:400 39px/1.24 var(--serif);margin:0 0 8px}.contact-box p{font-size:18px;color:#d0dfdc;margin:0}.contact-box .email{font-size:20px;font-weight:720;color:white;word-break:break-word;text-decoration:underline;text-underline-offset:6px;text-decoration-color:#83afaa}footer{border-top:1px solid var(--border);padding:26px 0 30px;color:#728287;font-size:14px}.footer-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 22px}
+    @media(max-width:870px){.container{width:min(720px,calc(100% - 48px))}.hero{grid-template-columns:1fr;gap:40px;padding:62px 0 72px}.photo-frame{width:min(440px,100%);aspect-ratio:4/4.3;grid-row:1}.hero h1{font-size:80px}.section{padding:63px 0 69px}.research-rows,.figures{grid-template-columns:1fr}.figure img{max-height:330px}.background-grid{gap:35px}.nav{gap:17px}.nav a{font-size:15px}}
+    @media(max-width:610px){body{font-size:17px}.container{width:calc(100% - 38px)}header{height:74px}.header-inner{gap:12px}.logo{font-size:21px}.nav{margin-left:auto;gap:12px}.nav a{font-size:14px}.nav a:last-child{display:none}.lang-switch{margin-left:0}.lang-switch button{font-size:13px;padding:4px 9px}.hero{padding:45px 0 60px;gap:35px}.photo-frame{width:min(320px,100%);aspect-ratio:4/4.2}.hero h1{font-size:68px}.hero h2{font-size:27px}.hero .intro,.section-intro,.paper-summary{font-size:18px}.chinese-name{font-size:23px}.section-title{font-size:40px}.research-item{padding:24px}.background-grid{grid-template-columns:1fr;gap:39px}.contact{padding:45px 0 65px}.contact-box{display:block;padding:28px 24px}.contact-box h2{font-size:34px}.contact-box .email{display:block;margin-top:20px;font-size:18px}.findings{padding:23px 20px}.figures{gap:30px}.figure img{max-height:none}}
+    @media(max-width:390px){.nav{gap:11px}.nav a{font-size:13px}.logo{font-size:19px}.lang-switch button{padding:4px 7px}.hero h1{font-size:61px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+    /* Original figures must not be cropped; keep their original aspect ratios. */
+    .chinese-name{display:none!important}
+    .hero h1{margin-bottom:21px}
+    .figure-source{display:inline-block;color:var(--green);font-size:15px;font-weight:700;white-space:nowrap;margin:5px 0;text-decoration:underline;text-underline-offset:3px}
+    .figure-missing{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;text-align:center;color:#42676a;font-weight:650;font-size:18px;padding:30px 16px;text-decoration:underline;text-underline-offset:5px}
+    .paper-figure-image{background:#fff;border:1px solid #dde7e1;border-radius:12px;display:flex;align-items:center;justify-content:center;padding:10px;min-height:245px;overflow:hidden}
+    .figure img,.paper-figure-image img{width:100%;height:auto;max-height:450px;object-fit:contain;aspect-ratio:auto;border:0;border-radius:0;display:block}
+    .figures.originals{align-items:start}
+    .edu-list{max-width:840px}
+    .edu-item{padding:20px 0}
+    .edu-item strong{font-size:20px}
+    .edu-item span{font-size:17px}
+    .education-award{font-size:16px;line-height:1.65;color:var(--sub);margin:22px 0 0}
+    .teaching-intro{font-size:19px;line-height:1.8;margin:0 0 26px}
+    .teaching-intro span{color:var(--sub)}
+    .course-list{max-width:840px}
+    .course{border-top:1px solid var(--border);display:flex;gap:16px;justify-content:space-between;align-items:baseline;padding:19px 0;font-size:19px}
+    .course span{font-weight:600}
+    .course small{font-size:16px;white-space:nowrap;color:var(--sub)}
+    @media(max-width:800px){.nav a:nth-child(n+3){display:none}.course{display:block}.course small{display:block;margin-top:5px}.figures.originals{grid-template-columns:1fr}.figure img,.paper-figure-image img{max-height:none}}
+    @media(max-width:450px){.nav a:nth-child(2){display:none}.hero h1{font-size:clamp(58px,16vw,68px)}.paper-figure-image{min-height:180px;padding:7px}}
+  
+    /* Compact desktop/mobile rhythm; keep type comfortably readable. */
+    header{height:76px}
+    .hero{padding:52px 0 60px;gap:60px}
+    .hero h1{margin:13px 0 14px;font-size:clamp(64px,7.2vw,92px)}
+    .hero h2{margin-bottom:14px}
+    .hero .intro{margin-bottom:18px}
+    .hero-links{margin-top:19px}
+    .section{padding:49px 0 55px}
+    .section-title{font-size:clamp(37px,4vw,48px);margin-bottom:13px}
+    .section-intro{margin-bottom:23px}
+    .overline{margin-bottom:8px}
+    .research-rows{gap:17px}
+    .research-item{padding:23px 25px}
+    .paper-meta{margin:0 0 8px}
+    .paper-title{margin-bottom:8px}
+    .authors{margin-bottom:15px}
+    .paper-summary{margin-bottom:19px}
+    .findings{padding:18px 23px;margin:15px 0 21px}
+    .figures{gap:19px;margin:19px 0 12px}
+    .figure figcaption{padding-top:9px;font-size:16px;line-height:1.5}
+    .figure-note{margin-top:9px}
+    .paper-links{margin-top:20px}
+    .edu-item{padding:13px 0}
+    .teaching-intro{margin-bottom:16px}
+    .course{padding:11px 0}
+    .contact{padding:35px 0 46px}
+    .contact-box{padding:29px 33px}
+    footer{padding:18px 0 20px}
+    .award-feature{display:flex;gap:15px;align-items:center;background:#e7f0ea;border:1px solid #cadbd0;border-radius:12px;padding:14px 17px;margin:7px 0 0;max-width:550px}
+    .award-symbol{flex:0 0 43px;width:43px;height:43px;border-radius:50%;background:#2f6e6a;color:white;display:flex;align-items:center;justify-content:center;font-size:26px}
+    .award-label{font-size:12px;color:#286765;letter-spacing:.11em;font-weight:850;line-height:1.2;margin-bottom:4px}
+    .award-feature strong{display:block;color:#1a3a40;font-size:20px;line-height:1.35}
+    .award-feature span{display:block;color:#4f6866;font-size:15px;line-height:1.4;margin-top:3px}
+    .hero-email{font-size:18px;margin:3px 0 0;display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+    .hero-email>span{color:#667d7f;font-weight:650;font-size:15px}
+    .hero-email a{font-weight:750;text-decoration:underline;text-decoration-color:#a6cac4;text-underline-offset:5px;color:#245e63;overflow-wrap:anywhere}
+    .supervisor-line{max-width:620px;margin:0 0 14px;color:var(--sub);font-size:17px;line-height:1.7}
+    .supervisor-line a{color:#245e63;font-weight:750;text-decoration:underline;text-decoration-color:#a6cac4;text-underline-offset:4px}
+    .talk-section-card{display:grid;grid-template-columns:.88fr 1.12fr;gap:20px;align-items:start}
+    .talk-summary{color:#4e686c;font-size:17px;line-height:1.65;margin:10px 0 0}
+    .talk-links{margin-top:14px}
+    .talk-images{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .talk-photo{margin:0}
+    .talk-photo img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:4/5;border-radius:12px;border:1px solid #dde7e1;background:white}
+
+    .figure-zoom{display:block;border-radius:10px;overflow:hidden;cursor:zoom-in;border:1px solid #dde7e1;background:white}
+    .figure-zoom:hover{border-color:#77a5a1}
+    .paper-figure-image{min-height:0;border:0;padding:7px}
+    .figure-zoom img{object-fit:contain;width:100%;max-height:none;border:0;aspect-ratio:auto}
+    .talk-feature{margin-top:24px;padding:20px 24px;border-radius:11px;background:#f0f4f1;border:1px solid #dfe8e2}
+    .talk-overline{font-weight:800;color:#27696a;letter-spacing:.11em;font-size:12px;margin-bottom:7px}
+    .talk-title{font-size:20px;font-weight:730;line-height:1.4;color:#1d4247}
+    .talk-title:hover{text-decoration:underline;text-underline-offset:4px}
+    .talk-feature p{color:#536b6f;font-size:16px;margin:6px 0 0;line-height:1.5}
+    @media(max-width:870px){.hero{gap:30px;padding:36px 0 45px}.section{padding:41px 0 46px}.talk-section-card{grid-template-columns:1fr}.talk-images{grid-template-columns:1fr 1fr}}
+    @media(max-width:610px){header{height:72px}.hero{padding:30px 0 42px;gap:24px}.hero h1{font-size:clamp(59px,14vw,69px)}.hero h2{margin-bottom:12px}.hero-email{font-size:17px}.award-feature{padding:13px 14px}.award-feature strong{font-size:18px}.award-feature span{font-size:14px}.section{padding:37px 0 41px}.section-title{font-size:38px}.research-item{padding:19px 21px}.figures{gap:20px}.contact{padding:30px 0 38px}.contact-box{padding:24px}.talk-feature{padding:18px 19px}.talk-title{font-size:18px}.talk-images{grid-template-columns:1fr}.supervisor-line{font-size:16px}}
+
+    /* Slightly smaller hero portrait, maintaining the uncluttered single-page layout. */
+    .photo-frame{width:100%;max-width:365px;justify-self:end}
+    @media(max-width:870px){.photo-frame{width:min(320px,100%);justify-self:start}}
+    @media(max-width:610px){.photo-frame{width:min(280px,100%)}}
+    .modelling-camp{margin-top:20px;border-top:1px solid var(--border);padding:18px 4px 0;display:grid;grid-template-columns:175px 1fr;column-gap:22px;align-items:start}
+    .modelling-camp-label{font-size:13px;font-weight:800;color:var(--green);letter-spacing:.075em;line-height:1.5}
+    .modelling-camp strong{font-size:19px;line-height:1.45;display:block;color:var(--ink)}
+    .modelling-camp p{font-size:16px;line-height:1.6;color:var(--sub);margin:4px 0 0}
+    @media(max-width:610px){.modelling-camp{grid-template-columns:1fr;gap:6px;margin-top:18px}}
+</style>
+</head>
+<body>
+<a class="skip-link" data-i18n="skip" href="#main">Skip to main content</a>
+<header><div class="container header-inner">
+<a class="logo" data-i18n="name" href="#top">Hao Ye</a>
+<nav aria-label="Main navigation" class="nav"><a data-i18n="navResearch" href="#research">Research</a><a data-i18n="navTalk" href="#talk">Talk</a><a data-i18n="navPaper" href="#paper">Paper</a><a data-i18n="navEducation" href="#education">Education</a><a data-i18n="navTeaching" href="#teaching">Teaching</a></nav>
+<div aria-label="Choose language" class="lang-switch" role="group"><button aria-pressed="true" data-lang="en" type="button">EN</button><button aria-pressed="false" data-lang="zh" type="button">中文</button></div>
+</div></header>
+<main id="main">
+<section class="container hero" id="top">
+<div class="hero-text"><div class="eyebrow" data-i18n="eyebrow">The University of Manchester</div>
+<h1 data-i18n="name">Hao Ye</h1>
+<h2 data-i18n="heroRole">PhD Researcher in Applied Mathematics</h2>
+<p class="intro" data-i18n="intro">My research focuses on fluid mechanics and fluid–structure interaction, particularly the dynamics of flexible fibres and thin disks in Stokes flow. I use mathematical modelling and numerical simulations to investigate their motion, deformation, hydrodynamic interactions and stability.</p><p class="supervisor-line"><span data-i18n="supervisorsIntro">PhD student supervised by</span> <a href="https://www.matthias-heil.co.uk/new_webpage/index.html" rel="noopener noreferrer" target="_blank">Prof. Matthias Heil</a> <span data-i18n="andWord">and</span> <a href="https://research.manchester.ac.uk/en/persons/draga.pihler-puzovic" rel="noopener noreferrer" target="_blank">Dr. Draga Pihler-Puzović</a>.</p><p class="hero-email"><span data-i18n="emailLabel">Email</span><a href="mailto:hao.ye@manchester.ac.uk">hao.ye@manchester.ac.uk <span aria-hidden="true">↗</span></a></p><div aria-label="Award" class="award-feature">
+<div aria-hidden="true" class="award-symbol">✦</div>
+<div><div class="award-label" data-i18n="heroAwardLabel">DOCTORAL SCHOLARSHIP</div>
+<strong data-i18n="heroAwardTitle">Departmental Scholarship</strong>
+<span data-i18n="heroAwardDetail">Department of Mathematics · The University of Manchester</span></div>
+</div>
+<div class="hero-links">
+
+<a class="link-button" href="https://scholar.google.com/citations?user=nLPSf8oAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">Google Scholar ↗</a>
+<a class="link-button" href="https://www.linkedin.com/in/hao-ye-27284b2a8/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
+<a class="link-button" data-i18n="universityLink" href="https://research.manchester.ac.uk/en/persons/hao-ye/" rel="noopener noreferrer" target="_blank">University profile ↗</a>
+</div></div>
+<div class="photo-frame"><img alt="Portrait of Hao Ye" data-i18n-alt="portraitAlt" fetchpriority="high" height="930" src="assets/hao-ye-portrait.webp" width="760"/></div>
+</section>
+<section class="section" id="research"><div class="container">
+<div class="overline" data-i18n="rKicker">What I work on</div><h2 class="section-title" data-i18n="rTitle">Research</h2>
+<p class="section-intro" data-i18n="rIntro">My research sits at the intersection of fluid mechanics, solid mechanics and scientific computing.</p>
+<div class="research-rows"><article class="research-item"><h3 data-i18n="r1Title">Fluid–structure interaction</h3><p data-i18n="r1Text">How elastic fibres and particles move, deform and change stability when immersed in slow, viscous flows.</p></article>
+<article class="research-item"><h3 data-i18n="r2Title">Mathematical modelling</h3><p><span data-i18n="r2Text">We develop mathematical models and numerical methods for problems in fluid and solid mechanics, using the open-source finite-element library</span> <a class="research-link" href="https://oomph-lib.github.io/oomph-lib/doc/html/" target="_blank" rel="noopener noreferrer">oomph-lib</a><span data-i18n="r2End">.</span></p></article></div>
+</div></section>
+<section class="section" id="paper"><div class="container">
+<div class="overline" data-i18n="pKicker">Selected publication</div><h2 class="section-title" data-i18n="pTitle">Research highlight</h2>
+<p class="paper-meta">Journal of Fluid Mechanics · 2026 · Volume 1040, A24 · Open Access</p>
+<h3 class="paper-title">Elastic fibres in shear flow: rotating and non-rotating states</h3>
+<p class="authors"><strong data-i18n="authorName">Hao Ye</strong>, Draga Pihler-Puzović &amp; Matthias Heil</p>
+<p class="paper-summary" data-i18n="paperSummary">Why do some flexible fibres rotate in a shear flow while others maintain a steady orientation? We show how fibre shape and elasticity control these two behaviours—and the transition between them.</p>
+<div class="findings"><strong data-i18n="findTitle">Key findings</strong><p data-i18n="findText">Some elastic fibres keep a steady orientation and drift across streamlines. Others perform Jeffery-like rotations with no net cross-stream drift. The transition occurs through a degenerate SNIPER bifurcation, a result that extends to different fibre shapes.</p></div>
+<div class="figures originals">
+<figure class="figure"><a class="figure-zoom" href="assets/jfm-figure-10.webp" rel="noopener noreferrer" target="_blank"><div class="paper-figure-image"><img alt="Figure 10 from Ye et al. (2026): angular motion, rotation period and fibre configurations" data-i18n-alt="fig1Alt" decoding="async" height="888" loading="eager" src="assets/jfm-figure-10.webp" width="1262"/></div></a><figcaption><strong data-i18n="fig1Head">Figure 10 · Rotation and bifurcation.</strong> <span data-i18n="fig1Cap">Rigid and elastic fibres exhibit periodic rotation; close to the transition, the period follows SNIPER scaling.</span> <a class="figure-source" data-i18n="figureOpen" href="papers/elastic-fibres-in-shear-flow-rotating-and-non-rotating-states.pdf#page=19" rel="noopener noreferrer" target="_blank">View in paper ↗</a></figcaption></figure>
+<figure class="figure"><a class="figure-zoom" href="assets/jfm-figure-11.webp" rel="noopener noreferrer" target="_blank"><div class="paper-figure-image"><img alt="Figure 11 from Ye et al. (2026): cross-stream drift of rigid and elastic fibres" data-i18n-alt="fig2Alt" decoding="async" height="638" loading="eager" src="assets/jfm-figure-11.webp" width="1258"/></div></a><figcaption><strong data-i18n="fig2Head">Figure 11 · Cross-stream migration.</strong> <span data-i18n="fig2Cap">Non-rotating states drift steadily across streamlines, while rotating states have zero mean cross-stream migration.</span> <a class="figure-source" data-i18n="figureOpen" href="papers/elastic-fibres-in-shear-flow-rotating-and-non-rotating-states.pdf#page=20" rel="noopener noreferrer" target="_blank">View in paper ↗</a></figcaption></figure>
+</div>
+<p class="figure-note" data-i18n="figureNote">Original Figures 10 and 11 from Ye, Pihler-Puzović &amp; Heil (2026), Journal of Fluid Mechanics, 1040, A24. Reproduced from the open-access paper under CC BY 4.0; stored locally.</p>
+<div class="paper-links">
+<a class="link-button primary" data-i18n="readPaper" href="https://doi.org/10.1017/jfm.2026.11859" rel="noopener noreferrer" target="_blank">Read the paper ↗</a>
+<a class="link-button" data-i18n="pdfLink" href="papers/elastic-fibres-in-shear-flow-rotating-and-non-rotating-states.pdf">Open full PDF ↗</a>
+</div></section>
+<section class="section" id="talk"><div class="container">
+<div class="overline" data-i18n="talkKicker">Featured presentation</div><h2 class="section-title" data-i18n="talkTitle">Conference talk</h2>
+<div class="talk-section-card">
+<div class="talk-feature">
+<div class="talk-overline" data-i18n="talkLabel">SELECTED CONFERENCE TALK</div>
+<a class="talk-title" href="https://sites.exeter.ac.uk/bmc-bamc2025/contributed-talk-sessions/" rel="noopener noreferrer" target="_blank">Elastic fibres in shear flows can maintain steady orientations <span aria-hidden="true">↗</span></a>
+<p data-i18n="talkDetails">BMC–BAMC 2025 · University of Exeter · 24 June 2025 · Contributed talk</p>
+<p class="talk-summary" data-i18n="talkSummary">At the BMC–BAMC 2025 meeting at the University of Exeter, I presented recent work on elastic fibres in shear flow and steady orientations.</p>
+<div class="paper-links talk-links"><a class="link-button" data-i18n="talkLink" href="https://sites.exeter.ac.uk/bmc-bamc2025/contributed-talk-sessions/" rel="noopener noreferrer" target="_blank">Conference programme ↗</a></div>
+</div>
+<div class="talk-images">
+<figure class="talk-photo"><a class="figure-zoom" href="assets/bamc-talk-1.webp" rel="noopener noreferrer" target="_blank"><img src="assets/bamc-talk-1.webp" alt="Hao Ye giving a talk at BMC–BAMC 2025, University of Exeter" data-i18n-alt="talkPhoto1Alt" loading="lazy" decoding="async"></a></figure>
+<figure class="talk-photo"><a class="figure-zoom" href="assets/bamc-talk-2.webp" rel="noopener noreferrer" target="_blank"><img src="assets/bamc-talk-2.webp" alt="Hao Ye presenting a slide on Jeffery orbits at BMC–BAMC 2025" data-i18n-alt="talkPhoto2Alt" loading="lazy" decoding="async"></a></figure>
+</div>
+</div>
+<div class="modelling-camp">
+  <span class="modelling-camp-label" data-i18n="campLabel">ADDITIONAL ACADEMIC ACTIVITY</span>
+  <div><strong>UK Graduate Modelling Camp 2024</strong>
+  <p data-i18n="campDetails">Participant · Cambridge, United Kingdom · 23–27 September 2024</p></div>
+</div>
+</div></section>
+<section class="section" id="education"><div class="container">
+<div class="overline" data-i18n="eKicker">Academic background</div><h2 class="section-title" data-i18n="eTitle">Education</h2>
+<div class="edu-list">
+<div class="edu-item"><strong data-i18n="phd">PhD in Applied Mathematics</strong><span data-i18n="phdPlace">The University of Manchester · 2024–present</span></div>
+<div class="edu-item"><strong data-i18n="msc">MSc in Applied Mathematics</strong><span data-i18n="mscPlace">The University of Manchester · 2022–2023</span></div>
+<div class="edu-item"><strong data-i18n="bsc">BSc in Mathematics and Applied Mathematics</strong><span data-i18n="bscPlace">Shanghai University · 2018–2022</span></div>
+</div>
+
+</div></section>
+<section class="section" id="teaching"><div class="container">
+<div class="overline" data-i18n="tKicker">Academic experience</div><h2 class="section-title" data-i18n="tTitle">Teaching</h2>
+<p class="teaching-intro"><strong data-i18n="taTitle">Teaching Assistant · The University of Manchester</strong><br/><span data-i18n="taDate">Department of Mathematics · 2024–present</span></p>
+<div class="course-list">
+<div class="course"><span data-i18n="course1">Scientific Computing · MATH49111</span><small>2024–2025, 2025–2026, 2026–2027</small></div>
+<div class="course"><span data-i18n="course2">Fluid Mechanics · MATH24412</span><small>2025–2026</small></div>
+<div class="course"><span data-i18n="course3">Mathematics 2E1 · MATH29681</span><small>2024–2025, 2025–2026</small></div>
+<div class="course"><span data-i18n="course4">Mathematics 0D2 · MATH19872</span><small>2024–2025</small></div>
+</div>
+</div></section>
+<section class="contact"><div class="container"><div class="contact-box"><div><h2 data-i18n="contact">Get in touch</h2><p data-i18n="contactText">I'm always happy to connect about mathematics and fluid mechanics.</p></div><a class="email" href="mailto:hao.ye@manchester.ac.uk">hao.ye@manchester.ac.uk ↗</a></div></div></section>
+</main>
+<footer><div class="container footer-row"><span>© <span id="year">2026</span> <span data-i18n="footerName">Hao Ye</span></span><span data-i18n="footerAff">Department of Mathematics · The University of Manchester</span></div></footer>
+<script>
+/* 100% local bilingual content; no network services, cookies, analytics or tracking. */
+const translations={"en":{"skip":"Skip to main content","navResearch":"Research","navTalk":"Talk","navPaper":"Paper","navEducation":"Education","navTeaching":"Teaching","eyebrow":"The University of Manchester","name":"Hao Ye","heroRole":"PhD Researcher in Applied Mathematics","intro":"My research focuses on fluid mechanics and fluid–structure interaction, particularly the dynamics of flexible fibres and thin disks in Stokes flow. I use mathematical modelling and numerical simulations to investigate their motion, deformation, hydrodynamic interactions and stability.","supervisorsIntro":"PhD student supervised by","andWord":"and","emailMe":"Email me ↗","universityLink":"University profile ↗","portraitAlt":"Portrait of Hao Ye","rKicker":"What I work on","rTitle":"Research","rIntro":"My research sits at the intersection of fluid mechanics, solid mechanics and scientific computing.","r1Title":"Fluid–structure interaction","r1Text":"How elastic fibres and particles move, deform and change stability when immersed in slow, viscous flows.","r2Title":"Mathematical modelling","r2Text":"We develop mathematical models and numerical methods for problems in fluid and solid mechanics, using the open-source finite-element library","r2End":".","pKicker":"Selected publication","pTitle":"Research highlight","authorName":"Hao Ye","paperSummary":"Why do some flexible fibres rotate in a shear flow while others maintain a steady orientation? We show how fibre shape and elasticity control these two behaviours—and the transition between them.","findTitle":"Key findings","findText":"Some elastic fibres keep a steady orientation and drift across streamlines. Others perform Jeffery-like rotations with no net cross-stream drift. The transition occurs through a degenerate SNIPER bifurcation, a result that extends to different fibre shapes.","figureOpen":"View in paper ↗","fig1Head":"Figure 10 · Rotation and bifurcation.","fig1Cap":"Rigid and elastic fibres exhibit periodic rotation; close to the transition, the period follows SNIPER scaling.","fig1Alt":"Original Figure 10: fibre rotation and the period near a SNIPER bifurcation","fig2Head":"Figure 11 · Cross-stream migration.","fig2Cap":"Non-rotating states drift steadily across streamlines, while rotating states have zero mean cross-stream migration.","fig2Alt":"Original Figure 11: cross-stream displacement of rigid and elastic fibres","figureNote":"Original Figures 10 and 11 from Ye, Pihler-Puzović & Heil (2026), Journal of Fluid Mechanics, 1040, A24. Reproduced from the open-access paper under CC BY 4.0; stored locally.","readPaper":"Read the paper ↗","pdfLink":"Open full PDF ↗","eKicker":"Academic background","eTitle":"Education","phd":"PhD in Applied Mathematics","phdPlace":"The University of Manchester · 2024–present","msc":"MSc in Applied Mathematics","mscPlace":"The University of Manchester · 2022–2023","bsc":"BSc in Mathematics and Applied Mathematics","bscPlace":"Shanghai University · 2018–2022","award":"Departmental Scholarship for doctoral study, The University of Manchester.","tKicker":"Academic experience","tTitle":"Teaching","taTitle":"Teaching Assistant · The University of Manchester","taDate":"Department of Mathematics · 2024–present","course1":"Scientific Computing · MATH49111","course2":"Fluid Mechanics · MATH24412","course3":"Mathematics 2E1 · MATH29681","course4":"Mathematics 0D2 · MATH19872","contact":"Get in touch","contactText":"I'm always happy to connect about mathematics and fluid mechanics.","footerName":"Hao Ye","footerAff":"Department of Mathematics · The University of Manchester","emailLabel":"Email","heroAwardLabel":"DOCTORAL SCHOLARSHIP","heroAwardTitle":"Departmental Scholarship","heroAwardDetail":"Department of Mathematics · The University of Manchester","talkKicker":"Featured presentation","talkTitle":"Conference talk","talkLabel":"SELECTED CONFERENCE TALK","talkDetails":"BMC–BAMC 2025 · University of Exeter · 24 June 2025 · Contributed talk","talkSummary":"At the BMC–BAMC 2025 meeting at the University of Exeter, I presented recent work on elastic fibres in shear flow and steady orientations.","talkLink":"Conference programme ↗","talkPhoto1Alt":"Hao Ye giving a talk at BMC–BAMC 2025, University of Exeter","talkPhoto2Alt":"Hao Ye presenting a slide on Jeffery orbits at BMC–BAMC 2025","campLabel":"ADDITIONAL ACADEMIC ACTIVITY","campDetails":"Participant · Cambridge, United Kingdom · 23–27 September 2024"},"zh":{"skip":"跳转至正文","navResearch":"研究","navTalk":"报告","navPaper":"论文","navEducation":"教育","navTeaching":"教学","eyebrow":"英国曼彻斯特大学","name":"叶昊","heroRole":"应用数学博士研究生","intro":"我的研究主要集中于流体力学与流固耦合，尤其关注柔性纤维与薄盘片在 Stokes 流中的动力学行为。我通过数学建模与数值模拟，研究它们的运动、变形、流体动力学相互作用及稳定性。","supervisorsIntro":"博士导师：","andWord":"与","emailMe":"发送邮件 ↗","universityLink":"曼大学术主页 ↗","portraitAlt":"叶昊的个人照片","rKicker":"我的研究方向","rTitle":"研究","rIntro":"我的研究结合流体力学、固体力学与科学计算，关注低雷诺数流动中的物理和数学问题。","r1Title":"流固耦合","r1Text":"研究柔性纤维与颗粒在黏性流体中的运动、变形以及动力学稳定性。","r2Title":"数学建模","r2Text":"我们针对流体与固体力学问题开展数学建模与数值计算，并使用开源有限元库","r2End":"。","pKicker":"代表性论文","pTitle":"研究成果","authorName":"叶昊","paperSummary":"在剪切流中，为什么有些柔性纤维会旋转，而另一些则可以保持稳定的取向？我们的研究表明，几何形状与弹性共同决定了这些行为及其相互转变。","findTitle":"主要研究结论","findText":"部分弹性纤维可以保持稳定取向，并持续横跨流线漂移；另一些纤维则做类似 Jeffery 轨道的周期旋转，平均横向漂移为零。两种状态之间的转变由退化的 SNIPER 分岔引起，这一机制对多种纤维形状均适用。","figureOpen":"在论文中查看 ↗","fig1Head":"图 10 · 周期旋转与分岔。","fig1Cap":"刚性和弹性纤维都可作周期旋转；接近临界点时，旋转周期遵循 SNIPER 分岔的标度规律。","fig1Alt":"原论文图10：纤维旋转与 SNIPER 分岔附近的周期","fig2Head":"图 11 · 跨流线迁移。","fig2Cap":"非旋转状态持续横向漂移，周期旋转状态的平均跨流线位移则为零。","fig2Alt":"原论文图11：刚性和弹性纤维的跨流线位移","figureNote":"原论文图 10 和图 11：叶昊、Draga Pihler-Puzović 和 Matthias Heil，Journal of Fluid Mechanics，1040，A24（2026）。依据 CC BY 4.0 许可使用，图片已保存在网站本地。","readPaper":"阅读论文 ↗","pdfLink":"打开完整论文 PDF ↗","eKicker":"学术背景","eTitle":"教育经历","phd":"应用数学博士","phdPlace":"英国曼彻斯特大学 · 2024 年至今","msc":"应用数学硕士","mscPlace":"英国曼彻斯特大学 · 2022–2023","bsc":"数学与应用数学学士","bscPlace":"上海大学 · 2018–2022","award":"获得曼彻斯特大学数学系博士研究奖学金（Departmental Scholarship）。","tKicker":"学术工作","tTitle":"教学经历","taTitle":"助教 · 英国曼彻斯特大学","taDate":"数学系 · 2024 年至今","course1":"Scientific Computing（科学计算）· MATH49111","course2":"Fluid Mechanics（流体力学）· MATH24412","course3":"Mathematics 2E1 · MATH29681","course4":"Mathematics 0D2 · MATH19872","contact":"联系我","contactText":"欢迎就应用数学、流体力学和科学计算相关问题交流。","footerName":"叶昊","footerAff":"英国曼彻斯特大学 · 数学系","emailLabel":"邮箱","heroAwardLabel":"博士研究奖学金","heroAwardTitle":"曼彻斯特大学数学系奖学金","heroAwardDetail":"Departmental Scholarship · The University of Manchester","talkKicker":"代表性学术报告","talkTitle":"会议报告","talkLabel":"学术会议报告","talkDetails":"2025 年 BMC–BAMC 联合会议 · 埃克塞特大学 · 2025 年 6 月 24 日 · 口头报告","talkSummary":"在埃克塞特大学举行的 BMC–BAMC 2025 会议上，我报告了关于剪切流中弹性纤维与稳定取向的最新研究。","talkLink":"查看会议日程 ↗","talkPhoto1Alt":"叶昊在埃克塞特大学 BMC–BAMC 2025 作报告","talkPhoto2Alt":"叶昊在 BMC–BAMC 2025 讲解 Jeffery 轨道相关内容","campLabel":"其他学术活动","campDetails":"参会者 · 英国剑桥 · 2024 年 9 月 23–27 日"}};
+function setLang(lang){if(!translations[lang])return;const dict=translations[lang];document.documentElement.lang=lang==='zh'?'zh-CN':'en';document.querySelectorAll('[data-i18n]').forEach(el=>{const value=dict[el.getAttribute('data-i18n')];if(value!==undefined)el.textContent=value;});document.querySelectorAll('[data-i18n-alt]').forEach(el=>{const value=dict[el.getAttribute('data-i18n-alt')];if(value!==undefined)el.alt=value;});document.querySelectorAll('[data-lang]').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.lang===lang)));document.title=lang==='zh'?'叶昊 · 应用数学':'Hao Ye — Applied Mathematics';try{localStorage.setItem('hao-ye-language',lang)}catch(e){}}
+
+document.querySelectorAll('[data-lang]').forEach(btn=>btn.addEventListener('click',()=>setLang(btn.dataset.lang)));
+let saved='en';try{saved=localStorage.getItem('hao-ye-language')||'en'}catch(e){}setLang(saved);document.getElementById('year').textContent=String(new Date().getFullYear());
+</script>
+</body>
+</html>
